@@ -1,0 +1,152 @@
+ERROR [main] 2012-10-30 21:25:51,519 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,521 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,522 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,523 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,525 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,529 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,531 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,533 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,535 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+ERROR [main] 2012-10-30 21:25:51,536 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step(java.lang.String)
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:83)
+	at repastrunner.RunTest.run(RunTest.java:31)
+	at repastrunner.RepastRecv.main(RepastRecv.java:30)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	... 11 more
+WARN  [main] 2012-10-30 22:11:51,389 repast.simphony.util.ClassUtilities - Utilities.findMethod: warning, could not find method 'step([])' in class java.lang.Class, returning null
+WARN  [main] 2012-10-30 22:12:13,702 repast.simphony.util.ClassUtilities - Utilities.findMethod: warning, could not find method 'step([])' in class java.lang.Class, returning null
