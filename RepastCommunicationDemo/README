@@ -1,0 +1,11 @@
+To start demo:
+
+1) Make sure rabbitmqserver is running:
+   ~/rabbitmq-server-2.8.7/scripts/rabbitmq-server
+2) Run init.sh script
+3) Run receive.sh script in one terminal.
+4) Run middleman.sh script in another terminal.
+5) Run send.sh in another terminal.
+
+send.sh forks a process that sends a message to the middleman process, which
+then replicates the message and sends these to the receive process.
