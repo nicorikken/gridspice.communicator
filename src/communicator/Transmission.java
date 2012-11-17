@@ -12,6 +12,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
+import remoteprocess.Scripts;
 import repast.simphony.context.Context;
 import repast.simphony.engine.watcher.Watch;
 import repast.simphony.engine.watcher.WatcherTriggerSchedule;
@@ -32,8 +33,7 @@ public class Transmission {
 			System.out.println("Transmission: " + localServer.getLocalQueueName());
 			//TODO: Call remoteprocess script to spawn a new remote process on sun grid engine.
 			Runtime runtime = Runtime.getRuntime();
-			String[] command = new String[]{"/bin/bash","-c", ConnectionEstablishment.PATH_TO_SCRIPTS 
-					+ ConnectionEstablishment.REMOTE_TRANSMISSION_SCRIPT + " " 
+			String[] command = new String[]{"/bin/bash","-c", Scripts.TRANSMISSION_COMMAND + " " 
 					+ targetQueueName + " " + localQueueName};
 			for (int i = 0; i< command.length; i++) {
 				System.out.print(command[i]);

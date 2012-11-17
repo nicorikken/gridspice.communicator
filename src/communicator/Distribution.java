@@ -3,6 +3,7 @@ package communicator;
 import messenger.ConnectionEstablishment;
 import messenger.ConnectionEstablishment.Handshake;
 import messenger.RabbitMessenger;
+import remoteprocess.Scripts;
 import repast.simphony.engine.schedule.ScheduledMethod;
 
 
@@ -19,9 +20,9 @@ public class Distribution {
 			localServer = new RabbitMessenger(localQueueName, targetQueueName);
 			//TODO: Call remoteprocess script to spawn a new remote process on sun grid engine.
 			Runtime runtime = Runtime.getRuntime();
-			String[] command = new String[]{"/bin/bash","-c", ConnectionEstablishment.PATH_TO_SCRIPTS 
-					+ ConnectionEstablishment.REMOTE_DISTRIBUTION_SCRIPT + " " 
+			String[] command = new String[]{"/bin/bash","-c", Scripts.DISTRIBUTION_COMMAND + " " 
 					+ targetQueueName + " " + localQueueName};
+			
 			for (int i = 0; i< command.length; i++) {
 				System.out.print(command[i]);
 				System.out.print(" ");
