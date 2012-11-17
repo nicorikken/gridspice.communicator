@@ -1,7 +1,12 @@
 package communicator;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Iterator;
+
+import messenger.ConnectionEstablishment;
+import messenger.RabbitMessenger;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -15,30 +20,40 @@ import repast.simphony.util.collections.IndexedIterable;
 
 public class Transmission {
 
-	private final static String QUEUE_NAME = "Process B";
+	private String data;
+	private RabbitMessenger localServer;
+	private boolean connected;
 	
 	public Transmission() {
-		
+		String localQueueName = java.util.UUID.randomUUID().toString();
+		String targetQueueName = java.util.UUID.randomUUID().toString();
+		try {
+			localServer = new RabbitMessenger(localQueueName, targetQueueName);
+			System.out.println("Transmission: " + localServer.getLocalQueueName());
+			//TODO: Call remoteprocess script to spawn a new remote process on sun grid engine.
+			Runtime runtime = Runtime.getRuntime();
+			String[] command = new String[]{"/bin/bash","-c", ConnectionEstablishment.PATH_TO_SCRIPTS 
+					+ ConnectionEstablishment.REMOTE_TRANSMISSION_SCRIPT + " " 
+					+ targetQueueName + " " + localQueueName};
+			for (int i = 0; i< command.length; i++) {
+				System.out.print(command[i]);
+				System.out.print(" ");
+			}
+			System.out.println("");
+			runtime.exec(command);
+			connected = localServer.listen();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Watch ( watcheeClassName = "communicator.Distribution",
-			watcheeFieldNames = "message",
+			watcheeFieldNames = "data",
 			whenToTrigger = WatcherTriggerSchedule.IMMEDIATE )
-	public void callScript(Distribution dist) throws IOException {
-		send(dist.getMessage());
-	}
-	
-	private void send(String message) throws IOException {
-		ConnectionFactory factory = new ConnectionFactory();
-	    factory.setHost("localhost");
-	    Connection connection = factory.newConnection();
-	    Channel channel = connection.createChannel();
-	    
-	    channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-	    channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
-	    System.out.println(" [x] Sent '" + message + "'");
-	    
-	    channel.close();
-	    connection.close();
+	public void callScript(Distribution dist) throws Exception {
+		if (connected) {
+			localServer.send(dist.getData());
+			System.out.println("Sent message to remote transmission: " + dist.getData());
+		}
 	}
 }

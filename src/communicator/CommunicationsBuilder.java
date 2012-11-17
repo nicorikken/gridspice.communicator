@@ -12,7 +12,7 @@ public class CommunicationsBuilder implements ContextBuilder<Object> {
 	@Override
 	public Context build(Context<Object> context) {
 		context.setId ("communicator");
-		Distribution dist = new Distribution("Dist 1");
+		Distribution dist = new Distribution();
 		Transmission trans = new Transmission();
 		context.add(dist);
 		context.add(trans);

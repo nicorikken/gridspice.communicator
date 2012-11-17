@@ -225,23 +225,22 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="Recv">
-        <java classname="process.B.Recv" failonerror="true" fork="yes">
+    <target name="RemoteDistribution">
+        <java classname="remoteprocess.RemoteDistribution" failonerror="true" fork="yes">
             <classpath refid="communicator.classpath"/>
+			<arg value="${local}"/>
+  			<arg value="${target}"/>
         </java>
     </target>
-    <target name="Repast">
-        <java classname="repastrunner.RepastRecv" failonerror="true" fork="yes">
+    <target name="RemoteTransmission">
+        <java classname="remoteprocess.RemoteTransmission" failonerror="true" fork="yes">
             <classpath refid="communicator.classpath"/>
+			<arg value="${local}"/> 
+            <arg value="${target}"/>
         </java>
     </target>
-    <target name="RunTest">
-        <java classname="repastrunner.RunTest" failonerror="true" fork="yes">
-            <classpath refid="communicator.classpath"/>
-        </java>
-    </target>
-    <target name="Send">
-        <java classname="process.A.Send" failonerror="true" fork="yes">
+    <target name="RepastServer">
+        <java classname="repastserver.RepastServer" failonerror="true" fork="yes">
             <classpath refid="communicator.classpath"/>
         </java>
     </target>

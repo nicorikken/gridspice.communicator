@@ -150,3 +150,179 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
 	... 11 more
 WARN  [main] 2012-10-30 22:11:51,389 repast.simphony.util.ClassUtilities - Utilities.findMethod: warning, could not find method 'step([])' in class java.lang.Class, returning null
 WARN  [main] 2012-10-30 22:12:13,702 repast.simphony.util.ClassUtilities - Utilities.findMethod: warning, could not find method 'step([])' in class java.lang.Class, returning null
+WARN  [main] 2012-11-16 09:04:50,226 repast.simphony.util.ClassUtilities - Utilities.findMethod: warning, could not find method 'step([class java.lang.String])' in class communicator.Distribution, returning null
+WARN  [main] 2012-11-16 10:40:35,630 repast.simphony.engine.watcher.WatcheeDataFinder - Watched field 'message' could not be found.
+ERROR [main] 2012-11-16 10:40:56,977 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:40)
+Caused by: java.lang.NullPointerException
+	at communicator.Distribution.step(Distribution.java:30)
+	... 10 more
+ERROR [main] 2012-11-16 10:40:56,988 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:40)
+Caused by: java.lang.NullPointerException
+	at communicator.Distribution.step(Distribution.java:30)
+	... 10 more
+ERROR [main] 2012-11-16 10:46:55,396 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:38)
+Caused by: com.rabbitmq.client.AlreadyClosedException: clean connection shutdown; reason: Attempt to use closed connection
+	at com.rabbitmq.client.impl.AMQConnection.shutdown(AMQConnection.java:666)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:772)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:705)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:691)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:684)
+	at messenger.RabbitMessenger.close(RabbitMessenger.java:71)
+	at communicator.Distribution.step(Distribution.java:31)
+	... 10 more
+ERROR [main] 2012-11-16 10:46:55,410 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:38)
+Caused by: com.rabbitmq.client.AlreadyClosedException: clean connection shutdown; reason: Attempt to use closed connection
+	at com.rabbitmq.client.impl.AMQConnection.shutdown(AMQConnection.java:666)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:772)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:705)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:691)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:684)
+	at messenger.RabbitMessenger.close(RabbitMessenger.java:71)
+	at communicator.Distribution.step(Distribution.java:31)
+	... 10 more
+ERROR [main] 2012-11-16 10:46:55,419 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:38)
+Caused by: java.lang.NullPointerException
+	at communicator.Distribution.step(Distribution.java:31)
+	... 10 more
+ERROR [main] 2012-11-16 10:46:55,421 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:38)
+Caused by: java.lang.NullPointerException
+	at communicator.Distribution.step(Distribution.java:31)
+	... 10 more
+ERROR [main] 2012-11-16 16:05:32,632 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:37)
+Caused by: java.lang.NullPointerException
+	at communicator.Distribution.step(Distribution.java:31)
+	... 10 more
+ERROR [main] 2012-11-16 16:05:32,676 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:37)
+Caused by: java.lang.NullPointerException
+	at communicator.Distribution.step(Distribution.java:31)
+	... 10 more
+ERROR [main] 2012-11-16 16:19:43,366 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:37)
+Caused by: com.rabbitmq.client.AlreadyClosedException: clean connection shutdown; reason: Attempt to use closed connection
+	at com.rabbitmq.client.impl.AMQConnection.shutdown(AMQConnection.java:666)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:772)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:705)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:691)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:684)
+	at messenger.RabbitMessenger.close(RabbitMessenger.java:74)
+	at communicator.Distribution.step(Distribution.java:32)
+	... 10 more
+ERROR [main] 2012-11-16 16:21:13,799 repast.simphony.engine.schedule.DynamicTargetAction - Tried to call: public void communicator.Distribution.step() throws java.lang.Exception
+java.lang.reflect.InvocationTargetException
+	at communicator.Distribution$$FastClassByCGLIB$$c2a39b9d.invoke(<generated>)
+	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAction.execute(ScheduledMethodControllerAction.java:253)
+	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:184)
+	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:201)
+	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+	at repastrunner.RepastRunner.step(RepastRunner.java:87)
+	at repastrunner.RepastServer.main(RepastServer.java:37)
+Caused by: com.rabbitmq.client.AlreadyClosedException: clean connection shutdown; reason: Attempt to use closed connection
+	at com.rabbitmq.client.impl.AMQConnection.shutdown(AMQConnection.java:666)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:772)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:705)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:691)
+	at com.rabbitmq.client.impl.AMQConnection.close(AMQConnection.java:684)
+	at messenger.RabbitMessenger.close(RabbitMessenger.java:77)
+	at communicator.Distribution.step(Distribution.java:32)
+	... 10 more
