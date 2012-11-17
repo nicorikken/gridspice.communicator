@@ -1,4 +1,3 @@
 RepastCommunicationDemo/processes/*
 bin/*
-src/messenger/ConnectionEstablishment.java
 src/remoteprocess/Scripts.java
