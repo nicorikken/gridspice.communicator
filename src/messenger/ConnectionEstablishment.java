@@ -5,7 +5,6 @@ public class ConnectionEstablishment {
 		SYN, ACK, SYNACK
 	}
 
-        //Blah
 	public static final long DEFAULT_TIMEOUT = 50 * 1000; //in milliseconds
 	
 	public static final String REMOTE_DISTRIBUTION_SCRIPT = "remote-distribution.sh";
