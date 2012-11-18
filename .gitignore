@@ -1,3 +1,4 @@
 RepastCommunicationDemo/*
 bin/*
+src/messenger/RabbitMQBroker.java
 src/remoteprocess/Scripts.java
