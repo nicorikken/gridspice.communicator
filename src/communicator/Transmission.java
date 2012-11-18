@@ -31,7 +31,6 @@ public class Transmission {
 		try {
 			localServer = new RabbitMessenger(localQueueName, targetQueueName);
 			System.out.println("Transmission: " + localServer.getLocalQueueName());
-			//TODO: Call remoteprocess script to spawn a new remote process on sun grid engine.
 			Runtime runtime = Runtime.getRuntime();
 			String[] command = new String[]{"/bin/bash","-c", Scripts.TRANSMISSION_COMMAND + " " 
 					+ targetQueueName + " " + localQueueName};

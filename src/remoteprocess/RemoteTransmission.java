@@ -3,6 +3,7 @@ package remoteprocess;
 import com.rabbitmq.client.ConsumerCancelledException;
 import com.rabbitmq.client.ShutdownSignalException;
 
+import messenger.ConnectionEstablishment;
 import messenger.RabbitMessenger;
 
 public class RemoteTransmission {
@@ -25,9 +26,14 @@ public class RemoteTransmission {
 	}
 	
 	private static void receive(RabbitMessenger connection) throws ShutdownSignalException, ConsumerCancelledException, InterruptedException {
-		while (true) {
+		int numIdleLoops = ConnectionEstablishment.DEFAULT_LOOPS;
+		while (numIdleLoops > 0) {
+			numIdleLoops--;
 			String data = connection.receive();
-			System.out.println(data);
+			if (data != null) {
+				numIdleLoops = ConnectionEstablishment.DEFAULT_LOOPS;
+				System.out.println(data);
+			}
 		}
 	}
 }
