@@ -1,6 +1,0 @@
-To start demo:
-
-1) Make sure rabbitmqserver is running:
-   ~/rabbitmq-server-2.8.7/scripts/rabbitmq-server
-2) Run repast-server.sh script in one terminal.
-
