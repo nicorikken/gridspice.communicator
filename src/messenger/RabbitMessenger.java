@@ -21,7 +21,8 @@ public class RabbitMessenger {
 	    ConnectionFactory factory = new ConnectionFactory();
 	    String hostname = java.net.InetAddress.getLocalHost().getHostName();
 	    System.out.println("Host: " + hostname);
-	    factory.setHost(hostname);
+	    //factory.setHost(hostname);
+	    factory.setVirtualHost(hostname);
 	    connection = factory.newConnection();
 	    channel = connection.createChannel();
 	    this.targetQueueName = targetQueueName;
