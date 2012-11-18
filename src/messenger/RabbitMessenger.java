@@ -19,7 +19,9 @@ public class RabbitMessenger {
 
 	public RabbitMessenger(String localQueueName, String targetQueueName) throws Exception {
 	    ConnectionFactory factory = new ConnectionFactory();
-	    factory.setHost("localhost");
+	    String hostname = java.net.InetAddress.getLocalHost().getHostName();
+	    System.out.println("Host: " + hostname);
+	    factory.setHost(hostname);
 	    connection = factory.newConnection();
 	    channel = connection.createChannel();
 	    this.targetQueueName = targetQueueName;
